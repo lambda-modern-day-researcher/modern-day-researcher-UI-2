@@ -18,7 +18,7 @@
             p {
                 text-align : center;
                 font-family: 'Courgette', cursive;
-                padding: 20px;
+                padding    : 20px;
             }
 
             img {
@@ -57,40 +57,47 @@
 
 
 @media(min-width: 500px) {
+    html {
+        background-color: #fdfce8;
+    }
+
     body {
         width : 1000px;
         margin: 0 auto;
-    
+
     }
 
-    .main-section{
-        display: flex;
+    .main-section {
+        display  : flex;
         flex-wrap: wrap;
-        padding: 30px;
-        
-        
+        padding  : 30px;
 
-        .div1, .div2, .div3, .div4 {          
-            width: 45%;
-            height: 300px;
-            margin: 20px;
+
+
+        .div1,
+        .div2,
+        .div3,
+        .div4 {
+            width        : 45%;
+            height       : 300px;
+            margin       : 20px;
             border-radius: 10px;
 
             p {
                 font-family: 'Courgette', cursive;
-                text-align: center;
+                text-align : center;
             }
-            
-           
-            img{
-                width: 100px;
-                height: 100px;
+
+
+            img {
+                width  : 100px;
+                height : 100px;
                 padding: 20px;
             }
         }
 
         .div1 {
-            background-color: #096386;
+            background-color: lighten(#096386, 10%);
         }
 
         .div2 {
@@ -102,9 +109,22 @@
         }
 
         .div4 {
-            background-color: #fdfce8;
+            background-color: darken(#fdfce8, 10%);
         }
 
+    }
+
+
+    .footer {
+        width           : 100%;
+        height          : 50px;
+        background-color: lighten(#0c084c, 5%);
+
+        p {
+            font-family: 'Courgette', cursive;
+            text-align : center;
+            color      : lighten(#f0eec8, 20%);
+        }
     }
 
 
