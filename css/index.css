@@ -242,6 +242,7 @@ table {
   .main-section .div4 p {
     text-align: center;
     font-family: 'Courgette', cursive;
+    padding: 20px;
   }
   .main-section .div1 img,
   .main-section .div2 img,
@@ -270,17 +271,23 @@ table {
   .main-section {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    padding: 20px;
+    padding: 30px;
   }
   .main-section .div1,
   .main-section .div2,
   .main-section .div3,
   .main-section .div4 {
-    width: 100%;
-    height: 200px;
-    margin: 0 20px;
-    border: red solid 2px;
+    width: 45%;
+    height: 300px;
+    margin: 20px;
+    border-radius: 10px;
+  }
+  .main-section .div1 p,
+  .main-section .div2 p,
+  .main-section .div3 p,
+  .main-section .div4 p {
+    font-family: 'Courgette', cursive;
+    text-align: center;
   }
   .main-section .div1 img,
   .main-section .div2 img,
@@ -288,6 +295,7 @@ table {
   .main-section .div4 img {
     width: 100px;
     height: 100px;
+    padding: 20px;
   }
   .main-section .div1 {
     background-color: #096386;
@@ -297,5 +305,8 @@ table {
   }
   .main-section .div3 {
     background-color: #f0eec8;
+  }
+  .main-section .div4 {
+    background-color: #fdfce8;
   }
 }
