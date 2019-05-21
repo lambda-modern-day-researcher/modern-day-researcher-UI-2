@@ -226,7 +226,10 @@ table {
     top: 75px;
     width: 100%;
   }
-  .main-section .card .card-back {
+  .main-section .card .card-back1,
+  .main-section .card .card-back2,
+  .main-section .card .card-back3,
+  .main-section .card .card-back4 {
     display: none;
   }
   .main-section .div1,
