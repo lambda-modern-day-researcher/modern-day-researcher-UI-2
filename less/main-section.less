@@ -5,7 +5,11 @@
         width   : 100%;
 
         .card {
-            .card-back1, .card-back2, .card-back3, .card-back4 {
+
+            .card-back1,
+            .card-back2,
+            .card-back3,
+            .card-back4 {
                 display: none;
             }
         }
@@ -16,7 +20,7 @@
         .div4 {
             width           : 100%;
             height          : 200px;
-            background-color: #c5fad9;
+            background-color: @background-color1;
             display         : flex;
             justify-content : space-around;
             flex-direction  : column;
@@ -24,8 +28,11 @@
 
             p {
                 text-align : center;
-                font-family: 'Courgette', cursive;
+                font-family: 'Amatic SC', cursive;
                 padding    : 20px;
+                font-size  : 25px;
+
+
             }
 
             img {
@@ -39,19 +46,19 @@
 
 
         .div2 {
-            background-color: #aceacf;
+            background-color: @background-color2;
         }
 
 
 
         .div3 {
-            background-color: #f77fee;
+            background-color: @background-color3;
         }
 
 
 
         .div4 {
-            background-color: #db66e4;
+            background-color: @background-color4;
         }
 
 
@@ -67,59 +74,72 @@
     * {
         box-sizing: border-box;
     }
-    
+
     html {
-        background-color: #fdfce8;
+        background-image: @html-background;
     }
 
-   
+
 
     .main-section {
-        display  : flex;
-        flex-wrap: wrap;
+        display        : flex;
+        flex-wrap      : wrap;
         justify-content: space-between;
-        width : 80%;
-        margin: 0 auto;
-       
+        width          : 70%;
+        margin         : 0 auto;
+
 
         .card.is-flipped {
             transform: rotateY(180deg);
         }
 
+        .card-face1,
+        .card-face2,
+        .card-face3,
+        .card-face4,
+        .card-back1,
+        .card-back2,
+        .card-back3,
+        .card-back4 {
+            border-radius: 10px;
+            border: 2px solid white;
+            
+        }
 
         .card-face1 {
-            background: lighten(#096386, 10%);
+            background: lighten(@card1-face-color, 10%);
+
         }
 
         .card-back1 {
-            background: lighten(#096386, 15%);
+            background: lighten(@card1-back-color, 15%);
             transform : rotateY(180deg);
         }
 
         .card-face2 {
-            background: #00b7a8;
+            background: @card2-face-color;
         }
 
         .card-back2 {
-            background: darken(#00b7a8, 10%);
+            background: darken(@card2-back-color, 10%);
             transform : rotateY(180deg);
         }
 
         .card-face3 {
-            background: #f0eec8;
+            background: @card3-face-color;
         }
 
         .card-back3 {
-            background: darken(#f0eec8, 10%);
+            background: darken(@card3-back-color, 10%);
             transform : rotateY(180deg);
         }
 
         .card-face4 {
-            background: darken(#fdfce8, 10%);
+            background: darken(@card4-face-color, 10%);
         }
 
         .card-back4 {
-            background: darken(#fdfce8, 20%);
+            background: darken(@card4-back-color, 20%);
             transform : rotateY(180deg);
         }
 
@@ -133,7 +153,8 @@
             transform-style: preserve-3d;
             cursor         : pointer;
             position       : relative;
-            margin: 20px;
+            margin         : 20px;
+
 
 
 
@@ -156,8 +177,9 @@
 
                 p {
                     text-align : center;
-                    font-family: 'Courgette', cursive;
+                    font-family: 'Amatic SC', cursive;
                     padding    : 20px;
+                    font-size  : 35px;
                 }
             }
 
@@ -170,13 +192,12 @@
 .footer {
     width           : 100%;
     height          : 50px;
-    background-color: lighten(#0c084c, 5%);
+    background-color: @footer-color;
 
     p {
         font-family: 'Courgette', cursive;
         text-align : center;
         color      : lighten(#f0eec8, 20%);
+
     }
 }
-
-
