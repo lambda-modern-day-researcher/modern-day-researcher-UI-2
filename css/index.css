@@ -399,14 +399,14 @@ html {
 .bottom-bar .footer .links .link2,
 .bottom-bar .footer .links .link3,
 .bottom-bar .footer .links .link4 {
-  background-color: red;
+  background-color: white;
   border-radius: 100px;
 }
 .bottom-bar .footer .links .link1:hover,
 .bottom-bar .footer .links .link2:hover,
 .bottom-bar .footer .links .link3:hover,
 .bottom-bar .footer .links .link4:hover {
-  background-color: white;
+  background-color: #ffdfdf;
 }
 .bottom-bar .footer .links img {
   width: 30px;
