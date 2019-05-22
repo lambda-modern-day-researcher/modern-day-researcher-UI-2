@@ -63,8 +63,8 @@
     height: 100%;
     justify-content: space-between;
     padding: 20px;
-    background-color: #0c084c;
-    border-radius: 2px;
+    background-color: #145374;
+    box-shadow: 1px 2px #2391cb;
   }
   .header .menu {
     width: 30%;
@@ -221,6 +221,12 @@ table {
   border-spacing: 0;
 }
 /*Manually style starts here*/
+* {
+  box-sizing: border-box;
+}
+html {
+  background-image: linear-gradient(#222831, #d65a31, #eeeeee, #eeeeee);
+}
 @media (max-width: 500px) {
   .main-section {
     position: relative;
@@ -273,12 +279,6 @@ table {
   }
 }
 @media (min-width: 500px) {
-  * {
-    box-sizing: border-box;
-  }
-  html {
-    background-image: linear-gradient(#222831, #d65a31, #eeeeee, #eeeeee);
-  }
   .main-section {
     display: flex;
     flex-wrap: wrap;
@@ -301,10 +301,10 @@ table {
     border: 2px solid white;
   }
   .main-section .card-face1 {
-    background: #37414f;
+    background: #505762;
   }
   .main-section .card-back1 {
-    background: #5b6370;
+    background: #414d5e;
     transform: rotateY(180deg);
   }
   .main-section .card-face2 {
@@ -366,13 +366,50 @@ table {
     font-size: 35px;
   }
 }
-.footer {
+.bottom-bar {
+  display: flex;
   width: 100%;
-  height: 50px;
-  background-color: #100a63;
+  height: 250px;
+  background-color: #18638a;
+  flex-direction: column;
 }
-.footer p {
-  font-family: 'Courgette', cursive;
-  text-align: center;
+.bottom-bar .footer {
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: 30px;
+}
+.bottom-bar .footer .details p,
+.bottom-bar .footer .details h1 {
+  font-family: 'Nunito', sans-serif;
   color: #ffffff;
+  padding: 15px 0;
+}
+.bottom-bar .footer .details h1 {
+  font-size: 25px;
+  font-family: 'Nunito', sans-serif;
+}
+.bottom-bar .footer .links {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-bar .footer .links .link1,
+.bottom-bar .footer .links .link2,
+.bottom-bar .footer .links .link3,
+.bottom-bar .footer .links .link4 {
+  background-color: red;
+  border-radius: 100px;
+}
+.bottom-bar .footer .links .link1:hover,
+.bottom-bar .footer .links .link2:hover,
+.bottom-bar .footer .links .link3:hover,
+.bottom-bar .footer .links .link4:hover {
+  background-color: white;
+}
+.bottom-bar .footer .links img {
+  width: 30px;
+  height: 30px;
+  margin: 7px;
 }

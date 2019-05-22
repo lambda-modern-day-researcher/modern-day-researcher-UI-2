@@ -1,0 +1,62 @@
+.bottom-bar {
+    display         : flex;
+    width           : 100%;
+    height          : 250px;
+    background-color: @footer-color;
+    flex-direction  : column;
+
+    .footer {
+        width : 45%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        margin: 30px;
+
+        .details {
+
+            p, h1 {
+                font-family: 'Nunito', sans-serif;
+                color      : lighten(#e7e7e7, 20%);
+                padding: 15px 0;
+
+            }
+
+            h1 {
+                font-size: 25px;
+                font-family: 'Nunito', sans-serif;
+
+               
+                
+            }
+        }
+
+        .links {
+
+            width          : 40%;
+            display        : flex;
+            justify-content: space-between;
+
+            .link1, .link2, .link3, .link4  {
+                background-color:red;
+                border-radius: 100px;
+               
+                
+
+                &:hover{
+                    background-color: white;
+                }
+            }
+
+            img {
+                width : 30px;
+                height: 30px;
+                margin: 7px;
+                
+                
+            }
+
+        }
+
+    }
+
+}
