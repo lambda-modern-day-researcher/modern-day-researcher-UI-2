@@ -84,9 +84,9 @@
   }
   .header ul li a {
     text-decoration: none;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Nunito', sans-serif;
     color: #f0eec8;
-    font-size: 35px;
+    font-size: 25px;
   }
   .header ul li a:hover {
     color: #dad578;
@@ -282,9 +282,11 @@ html {
   .main-section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 70%;
+    height: 1000px;
     margin: 0 auto;
+    align-content: center;
   }
   .main-section .card.is-flipped {
     transform: rotateY(180deg);
@@ -401,7 +403,7 @@ html {
   .bottom-bar .footer .links .link3,
   .bottom-bar .footer .links .link4 {
     background-color: white;
-    border-radius: 25px;
+    border-radius: 50%;
   }
   .bottom-bar .footer .links .link1:hover,
   .bottom-bar .footer .links .link2:hover,
@@ -410,8 +412,8 @@ html {
     background-color: #18638a;
   }
   .bottom-bar .footer .links img {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     margin: 7px;
   }
 }
