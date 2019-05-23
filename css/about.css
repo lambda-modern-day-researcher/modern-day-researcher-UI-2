@@ -1,55 +1,56 @@
-@media (min-width: 500px) {
-    body {
-        margin:0 auto;
-        height: 1000px;
-    }
-      
-    .header, .divider {
-        display: flex;
-      width: 100%;
-      height: 100px;
-      border-radius: 5px;
-      background-color: #f4a62a;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-    
+@media(max-width: 500px) {
     .statement {
-        margin: 130px;
-        height: 200px;
+        margin: 80px;
+        height: 100px;
+    }
+   
+    p { 
+        font-family: 'Noto Sans', sans-serif !important;
+        font-size: 20px !important; 
+        font-weight: 900 !important;
+        text-align: center !important;
     }
 
-    h1, p {
-        font-family: 'Noto Sans', sans-serif;
-        text-align: center;
+    a {
+        font-family: 'Noto Sans', sans-serif !important;
+        text-decoration: none;
+        color: white;
     }
 
-    p {
-        font-size: 40px;
-        font-weight: 500;
+    a:hover{
+        color: #d4f900;
     }
 
+    .menu2>ul {
+        display: flex;
+        justify-content: space-around;
+        
+        
+    }
+
+    .menu2 {
+        width:100%;
+    }
     .color1 {
         color: #4285f4;
     }
-
     .color2 {
         color: #ea4335;
     }
-
     .color3 {
         color: #34a853;
     }
-
     .color4 {
         color: #f9ab00;
     }
 
-    .our-team {
-        width: 100%;
+    h1 {
+        text-align: center;
+        padding: 20px !important;
     }
 
-    .our-team > h1 {
-        padding: 40px;
+    .header> img {
+        display: none;
     }
 
     .team-container {
@@ -58,35 +59,142 @@
         height: 600px;
         justify-content: space-around;
         flex-wrap: wrap;
-
     }
 
-    .member > p {
-        font-size: 16px;
+    .member>p{
+        font-size: 13px !important;
     }
 
-    .member > img {
+    .member>img {
+        border-radius: 3px;
+        width: 180px;
+        height: 180px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .header, .divider {
+        display: flex;
+        width: 100%;
+        height: 50px !important; 
+        border-radius: 5px;
+        background-color: #f9ab00;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .header{
+       position: relative !important;
+       background-color: #f9ab00 !important;
+    }
+
+    .divider>img {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+@media (min-width: 500px) {
+    body {
+        margin: 0 auto;
+        height: 1000px;
+    }
+    .header, .divider {
+        display: flex;
+        width: 100%;
+        height: 100px;
+        border-radius: 5px;
+        background-color: #f9ab00;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .header> img {
+        width: 100px;
+        height: 100px;
+    }
+    .statement {
+        margin: 130px;
+        height: 200px;
+    }
+    h1 {
+        text-align: center;
+    }
+    p {
+        font-family: 'Noto Sans', sans-serif !important;
+        font-size: 40px !important; 
+        font-weight: 500 !important;
+        text-align: center !important;
+    }
+    .color1 {
+        color: #4285f4;
+    }
+    .color2 {
+        color: #ea4335;
+    }
+    .color3 {
+        color: #34a853;
+    }
+    .color4 {
+        color: #f9ab00;
+    }
+    .our-team {
+        width: 100%;
+    }
+    .our-team>h1 {
+        padding: 40px;
+    }
+    .team-container {
+        display: flex;
+        width: 100%;
+        height: 600px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .member>p {
+        font-size: 16px !important; 
+    }
+    .member>img {
         border-radius: 3px;
         width: 200px;
         height: 200px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
-
-    .member{
-        margin: 20px;
+    .member {
+        margin: 20px !important;
     }
-
-
-
-    .divider > img {
-        position: relative;
+    .image {
+        position: relative !important; 
         top: 20px;
         padding: 20px;
-        width:20px;
-        height: 20px;
+        width: 20px !important;
+        height: 20px !important;
         margin: 0 auto;
+        
     }
 
-  }
- 
-  
+    .our-team>h1 {
+        font-size: 30px;
+    }
+
+    .menu2{
+       width: 30%;
+    }
+
+    .more-details {
+        margin-top: 50px;
+        width: 200px;
+        height: 200px;
+        background-color: red;
+    }
+
+    .details-text{
+        font-size: 10px !important;
+    }
+
+    .hide{
+        display: none;
+    }
+}
