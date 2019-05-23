@@ -1,31 +1,29 @@
 @media (min-width: 500px) {
     body {
         margin:0 auto;
+        height: 1000px;
     }
       
-    .header {
-      display: flex;
+    .header, .divider {
+        display: flex;
       width: 100%;
-      height: 100%;
-      justify-content: space-between;
-      padding: 20px;
-      background-color: #f4a62a;
+      height: 100px;
       border-radius: 5px;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     
     .statement {
-        margin: 100px;
+        margin: 130px;
+        height: 200px;
     }
 
-    h1 {
+    h1, p {
         font-family: 'Noto Sans', sans-serif;
+        text-align: center;
     }
 
     p {
-        font-family: 'Noto Sans', sans-serif;
         font-size: 40px;
-        text-align: center;
         font-weight: 500;
     }
 
@@ -43,6 +41,49 @@
 
     .color4 {
         color: #f9ab00;
+    }
+
+    .our-team {
+        width: 100%;
+    }
+
+    .our-team > h1 {
+        padding: 40px;
+    }
+
+    .team-container {
+        display: flex;
+        width: 100%;
+        height: 600px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+    }
+
+    .member > p {
+        font-size: 16px;
+    }
+
+    .member > img {
+        border-radius: 3px;
+        width: 200px;
+        height: 200px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .member{
+        margin: 20px;
+    }
+
+
+
+    .divider > img {
+        position: relative;
+        top: 20px;
+        padding: 20px;
+        width:20px;
+        height: 20px;
+        margin: 0 auto;
     }
 
   }
