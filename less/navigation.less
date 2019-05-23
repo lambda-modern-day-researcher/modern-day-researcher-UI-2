@@ -78,7 +78,9 @@
         justify-content : space-between;
         padding         : 20px;
         background-color: @nav-color;
-        box-shadow: 1px 2px  lighten(#145374, 20%);
+        border-radius   : 5px;
+        box-shadow      : 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      
         
 
 
@@ -94,6 +96,7 @@
         }
 
         ul {
+            margin-top: 20px;
             display        : flex;
             justify-content: space-around;
 
@@ -102,9 +105,7 @@
                     text-decoration: none;
                     font-family: 'Nunito', sans-serif;
                     color          : @nav-text-color;
-                    font-size      : 25px;
-
-
+                    font-size      : 20px;
                 }
 
                 a:hover {

@@ -1,0 +1,49 @@
+@media (min-width: 500px) {
+    body {
+        margin:0 auto;
+    }
+      
+    .header {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: space-between;
+      padding: 20px;
+      background-color: #f4a62a;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    .statement {
+        margin: 100px;
+    }
+
+    h1 {
+        font-family: 'Noto Sans', sans-serif;
+    }
+
+    p {
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 40px;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .color1 {
+        color: #4285f4;
+    }
+
+    .color2 {
+        color: #ea4335;
+    }
+
+    .color3 {
+        color: #34a853;
+    }
+
+    .color4 {
+        color: #f9ab00;
+    }
+
+  }
+ 

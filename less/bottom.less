@@ -6,29 +6,39 @@
         background-color: @footer-color;
         flex-direction  : row;
         justify-content : space-between;
+        border-radius   : 5px;
+        box-shadow      : 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
         .usf-link {
 
             padding: 50px;
 
-            ul{
-                li{
+            ul {
+                li {
                     padding: 5px 0;
                 }
+
+
             }
 
             a {
-                font-family: 'Nunito', sans-serif;
-                color      : lighten(#e7e7e7, 20%);
-                padding    : 15px 0;
+
+                font-family    : 'Nunito', sans-serif;
+                color          : lighten(#e7e7e7, 20%);
+                padding        : 15px 0;
                 text-decoration: none;
 
+            }
+
+            a:hover {
+                color: darken(@nav-text-color, 20%);
             }
 
             h1 {
                 font-size  : 25px;
                 font-family: 'Nunito', sans-serif;
                 color      : lighten(#e7e7e7, 20%);
+                padding    : 5px 0;
             }
 
         }
@@ -76,7 +86,7 @@
 
 
                     &:hover {
-                        background-color: lighten(#145374, 5%);
+                        background-color: @footer-color;
                     }
                 }
 
@@ -161,5 +171,9 @@
 
         }
 
+    }
+
+    .usf-link {
+        display: none;
     }
 }
