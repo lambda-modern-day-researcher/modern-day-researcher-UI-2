@@ -7,7 +7,10 @@ class Obsj {
     }
 
     select() {
-
+        this.div.forEach(element => {
+            element.classList.toggle('hide')
+        })
+  
     }
 
 }
