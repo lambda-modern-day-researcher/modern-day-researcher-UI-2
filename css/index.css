@@ -52,6 +52,12 @@
   .menu--open {
     display: block;
   }
+
+  .turn-img {
+    display:none;
+  }
+
+  
 }
 @media (min-width: 500px) {
   .menu-button {
