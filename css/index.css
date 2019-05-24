@@ -383,7 +383,14 @@ html {
   .main-section .card .div4 img {
     width: 100px;
     height: 100px;
-    padding: 20px;
+    padding: 10px;
+  }
+  .main-section .card .div1 .turn-img,
+  .main-section .card .div2 .turn-img,
+  .main-section .card .div3 .turn-img,
+  .main-section .card .div4 .turn-img {
+    width: 60px;
+    height: 60px;
   }
   .main-section .card .div1 p,
   .main-section .card .div2 p,
