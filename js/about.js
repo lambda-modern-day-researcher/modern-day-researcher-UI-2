@@ -6,7 +6,7 @@ class Obsj{
     }
     
     select(){
-      return console.log('working');
+      
     }
 
 }
